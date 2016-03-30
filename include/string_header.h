@@ -1,5 +1,5 @@
-#ifndef CPP_STRING_H
-#define CPP_STRING_H
+#ifndef STRING_HEADER_H
+#define STRING_HEADER_H
 //one definition rule
 
 #include <cstring>
