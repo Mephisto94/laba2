@@ -189,8 +189,3 @@ bool operator>(const String &lhs, const String &rhs) {
 bool operator>=(const String &lhs, const String &rhs) {
     return !(lhs < rhs);
 }
-
-
-std::ostream &operator<<(std::ostream &stream, const String &A) {
-    return stream << A.data();
-}
