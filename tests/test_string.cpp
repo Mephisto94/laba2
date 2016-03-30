@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN
 
 #include "catch.hpp"
-#include "string.h"
+#include "string_header.h"
 
 
 
@@ -216,8 +216,8 @@ TEST_CASE ("Test_plus_3") {
     char * B = "plus_1";
     String C;
     String res("Test_plus_1");
-    C = B + A;
-    A = B + A;
+    C = A + B;
+    A = A + B;
     REQUIRE(C == res);
     REQUIRE(A == res);
 }
