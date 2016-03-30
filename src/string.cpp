@@ -56,7 +56,7 @@ String::String(String &&other) {
 
 
 String::~String() {
-    if (string[0] != null_terminator and length != 0) {
+    if (string[0] != null_terminator & length != 0) {
         delete[] string;
     }
 }
