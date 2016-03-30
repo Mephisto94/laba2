@@ -1,7 +1,21 @@
-cmake_minimum_required(VERSION 3.4)
-project(laba2)
+cmake_minimum_required(VERSION 2.8)
+project(CppLab2)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+if (MSVC)
+    add_definitions(/W4)
+else()
+    add_definitions(-Wall)
+    add_definitions(-std=c++11)
+endif()
 
-set(SOURCE_FILES main.cpp)
-add_executable(laba2 ${SOURCE_FILES})
+include_directories(Catch/include)
+include_directories(include)
+
+enable_testing()
+
+set(SOURCES src/string.cpp)
+
+
+add_executable(test_string tests/test_string.cpp ${SOURCES})
+
+add_test(NAME ${PROJECT_NAME} COMMAND test_string)

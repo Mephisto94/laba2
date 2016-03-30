@@ -1,3 +1,3 @@
-# String representation
+# String
 
 
