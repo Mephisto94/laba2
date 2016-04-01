@@ -4,7 +4,6 @@
 #include "string_header.h"
 
 
-
 TEST_CASE("TEST 1") {
     String s;
     REQUIRE(*(s.data()) == '\0');
