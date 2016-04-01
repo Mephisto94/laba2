@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(CppLab2)
+project(laba2)
 
 if (MSVC)
     add_definitions(/W4)
