@@ -3,6 +3,8 @@
 //one definition rule
 
 #include <cstring>
+#include <stddef.h>
+#include <stdexcept>
 
 
 class String {
