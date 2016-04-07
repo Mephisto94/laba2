@@ -4,7 +4,6 @@ clone_folder: c:\dev\complex
 
 build:
 
-
 install:
     - git submodule -q update --init --recursive
 
